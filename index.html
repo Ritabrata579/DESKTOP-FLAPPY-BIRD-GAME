@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #fire1{
+                background-image: url("img/fire1.gif");
+                left: 513px;
+                top: 0px;
+                background-size: 43%;
+                background-repeat: no-repeat;
+            }
+            /* #fire2{
+                background-image: url("img/fire2.gif");
+                left: 753px;
+                top:140px;
+                background-size: 75%;
+                background-repeat: no-repeat;
+            }
+            #fire3{
+                background-image: url("img/fire3.gif");
+                left:300px;
+                top:140px;
+                background-size: 75%;
+                background-repeat: no-repeat;
+                transform: rotatey(180deg);
+            } */
+            .fire{
+                 position: absolute;
+                 width: 300px;
+                 height: 300px;
+                 background-position: center center;
+                 background-size: cover;
+                 display: none;
+            }
+            #canvas{
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" height="653" width="1360"></canvas>
+        <div class="fire" id="fire1"></div>
+        <div class="fire" id="fire2"></div>
+        <script src="js/game.js" ></script>
+    </body>
+</html>
